@@ -46,49 +46,32 @@ app.Run();
 /*
  KAVRAMLAR VE METOTLAR AÇIKLAMASI
 CONTROLLER
-Tanım:Kullanıcının HTTP isteğini işleyen ve iş mantığını çalıştıran bir sınıftır.
-Amaç: İstekleri (örneğin, bir web tarayıcısından gelen GET veya POST) alır ve gerekli işlemleri yapar.
-      Gerekli verileri Model ile alır ve View'e iletir.
+Görevi: HTTP isteklerini işlemek ve iş mantığını yürütmek.
 
 ACTION
-Tanım:Bir Controller içindeki metotlardan biridir ve iş mantığını içerir.
-Amaç: Kullanıcının isteğine göre bir işlemi yürütür.
-      Genellikle bir View döndürür, ancak bazen sadece JSON veya metin gibi farklı türde sonuçlar da dönebilir.
+Görevi: Controller içinde kullanıcıdan gelen istekleri karşılar ve iş mantığını içerir.
 
 MODEL
-Tanım: Uygulamada kullanılan veriyi temsil eden sınıftır.
-Amaç:  Veritabanından veya başka kaynaklardan alınan veriyi işler ve Controller'a sunar.
-       Ayrıca kullanıcıdan alınan veriyi doğrulama işlemleri yapar.
+Görevi: Uygulamanın verilerini temsil eder ve Controller ile View arasında bir köprü görevi görür.
 
 VIEW
-Tanım: Kullanıcıya gösterilecek HTML çıktısını üreten bir şablondur.
-Amaç:  Controller tarafından sağlanan verileri işleyerek HTML çıktısı oluşturur.
-       Kullanıcı arayüzü bu dosyalar üzerinden oluşturulur.
+Görevi: HTML çıktısını üretir ve kullanıcıya gösterir.
 
 RAZOR
-Tanım: ASP.NET Core'da View'ler için kullanılan bir şablon motorudur.
-Amaç:  HTML ve C# kodlarını birleştirerek dinamik HTML çıktısı üretir.
-       @ sembolüyle başlayan C# ifadelerini kullanır.
+Görevi: Dinamik HTML çıktıları üretmek için C# kodu ile HTML'i birleştirir.
 
 RAZORVIEW
-Tanım: Razor ile oluşturulmuş bir .cshtml dosyasını ifade eder.
-Amaç:  Razor syntax ile yazılmış dinamik HTML sayfalarını temsil eder.
-       RazorViewEngine tarafından çalıştırılır ve kullanıcıya sunulur.
-
+Görevi: Razor ile oluşturulmuş bir .cshtml dosyasını ifade eder.
 
 WWWROOT
-Tanım: Uygulamanın statik dosyalarının (CSS, JS, resim vb.) barındırıldığı özel bir klasördür.
-Amaç:  Kullanıcıya direkt olarak erişilebilecek statik dosyaları tutar.
-
+Görevi: CSS, JavaScript ve resim gibi statik dosyaları barındırır.
 
 BUİLDER.BUİLD()
 Tanım: ASP.NET Core uygulamasını oluşturur ve çalıştırmaya hazır hale getirir.
-Amaç:  Uygulamanın yapılandırmalarını tamamlar (örneğin, servislerin eklenmesi).
-       Uygulamanın middleware (ara katman) hattını oluşturur.
+Amaç:  Uygulamanın yapılandırmalarını tamamlar. Uygulamanın middleware (ara katman) hattını oluşturur.
 
 APP.RUN()
 Tanım: ASP.NET Core uygulamasını başlatır ve HTTP isteklerini dinlemeye başlar.
-Amaç:  Uygulamanın ana döngüsünü başlatır.
-       Uygulama Run metodu çalışana kadar gelen istekleri işleyemez.
+Amaç:  Uygulamanın ana döngüsünü başlatır. Uygulama Run metodu çalışana kadar gelen istekleri işleyemez.
 
  */
